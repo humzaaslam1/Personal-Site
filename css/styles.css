@@ -1,0 +1,189 @@
+body
+{
+    margin: 0;
+    color: #15D8B3;
+    background-color: #2D2929;
+}
+
+.flex
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav
+{
+    background-color: #2E6FA0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li
+{
+    display: inline-block;
+    padding: 16px;
+}
+
+@keyframes gradient-animation {
+    from {background-color: #2E6FA0;}
+    to {background-color: #49A4BB;}
+}
+
+nav li:hover
+{
+    animation-name: gradient-animation;
+    animation-duration: 1s;
+}
+
+nav a
+{
+    text-decoration: none;
+    color: white;
+    font-family: "Cantarell", sans-serif;
+}
+
+.intro-container
+{
+    height:  560px;
+    background-color: #2F39A9;
+}
+
+h1
+{
+    font-family: "Old Standard TT", serif;
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.intro-container p
+{
+    font-family: "Cantarell", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.skills-section > div
+{
+    display: grid;
+    grid-template: repeat(4, 0.75fr) / repeat(2, 25%);
+    gap: 20px;
+    justify-content: center;
+}
+
+h2
+{
+    font-family: "Old Standard TT", serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+}
+
+section
+{
+    margin: 20px 0;
+}
+
+section h3
+{
+    font-family: "Old Standard TT", serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+section p
+{
+    font-family: "Cantarell", sans-serif;
+    text-align: justify;
+}
+
+section img
+{
+    float: left;
+    padding: 20px;
+    margin-right: 30px;
+    width: 320px;
+}
+
+hr
+{
+    width: 20%;
+    border: 0;
+    border-top: 5px dotted #49A4BB;
+    margin: 20px auto;
+}
+
+.experience-section > div
+{
+    display: grid;
+    grid-template: repeat(5, 0.75fr) / repeat(2, 25%);
+    gap: 20px;
+    justify-content: center;
+}
+
+section ul
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Cantarell", sans-serif;
+}
+
+.education-section > div
+{
+    display: grid;
+    grid-template: 0.75fr / repeat(2, 25%);
+    gap: 20px;
+    justify-content: center;
+}
+
+footer
+{
+    padding: 30px;
+    background-color: #2F39A9;
+}
+
+.list-group-item
+{
+    background-color: #2D2929;
+    color: #15D8B3;
+}
+
+@media (max-width: 1280px) {
+    .skills-section img
+    {
+        float: none;
+        margin: 0;
+    }
+
+    .skills-section > div
+    {
+        grid-template: repeat(8, 0.5fr) / 0.5fr;
+    }
+
+    .text-grid-item, .image-grid-item
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-section > div
+    {
+        grid-template: repeat(10, 0.5fr) / 0.5fr;
+    }
+
+    .education-section > div
+    {
+        grid-template: repeat(2, 0.5fr) / 0.5fr;
+    }
+}
